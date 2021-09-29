@@ -1,0 +1,31 @@
+<ion-app>
+  <ion-header translucent>
+    <ion-toolbar>
+      <ion-title>MyApp</ion-title>
+    </ion-toolbar> </ion-header>
+  <ion-content fullscreen>
+    <ion-card>
+      <img src="assets/img/campus.png" width="1600"  alt="" />
+      <ion-card-header>
+        <ion-item>
+          <ion-icon slot="start" name="person"></ion-icon>
+          <ion-label position="floating">Usuario:</ion-label>
+          <ion-input placeholder="Ingresa tu usuario" type="email"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-icon slot="start" name="key"></ion-icon>
+          <ion-label position="floating">Contraseña:</ion-label>
+          <ion-input
+            placeholder="Ingresa tu contraseña"
+            type="password"
+          ></ion-input>
+        </ion-item>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-button  color="success" expand="block"[routerLink]="['/access']">Entrar</ion-button>
+        <ion-button expand="block" expand="block"[routerLink]="['/registro']">Registrarse</ion-button>
+        <ion-button color="danger" expand="block"[routerLink]="['/recuperar']">Recuperar Contraseña</ion-button>
+      </ion-card-content>
+    </ion-card>
+  </ion-content>
+</ion-app>
