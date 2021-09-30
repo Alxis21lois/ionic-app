@@ -1,9 +1,23 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>recuperar</ion-title>
+  <ion-toolbar color="primary">
+    <ion-title>Recuperar</ion-title>
+
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-
+  <ion-item>
+    <img src="/assets/icon/duoc_icon.png"/>
+  </ion-item>
+  <ion-title class="title">
+    Has olvidado tu contraseña?
+  </ion-title>
+  <ion-item class="label">
+    <ion-icon slot="start" name="person"></ion-icon>
+    <ion-input placeholder="Ingresa tu e-mail" type="email"></ion-input>
+  </ion-item>
+  <ion-button class="margin" size="default" [routerLink]="['/#']">Recuperar contraseña</ion-button>
 </ion-content>
